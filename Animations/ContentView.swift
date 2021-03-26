@@ -8,9 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var change = false
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+
+        VStack{
+            Button("Twist The Avo") {
+                self.change.toggle()
+            }
+            .padding(.bottom, 100)
+           
+            
+             Image("Avo")
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+                .frame(width: 200, height: 100)
+            .rotationEffect(Angle.degrees(change ? 220 : 0))
+            .animation(.easeOut)
+
+        }
+       
     }
 }
 
