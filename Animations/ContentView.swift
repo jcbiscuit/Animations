@@ -23,7 +23,7 @@ struct ContentView: View {
              Image("Avo")
             .resizable()
             .aspectRatio(contentMode: .fill)
-                .frame(width: 200, height: 100)
+                .frame(width: 300, height: 300)
             .rotationEffect(Angle.degrees(change ? 220 : 0))
             .animation(.easeOut)
 
