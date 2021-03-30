@@ -26,7 +26,7 @@ struct ContentView: View {
             .aspectRatio(contentMode: .fill)
             .rotationEffect(Angle.degrees(change ? 220 : 0))
             .animation(.easeOut)
-                .scaleEffect(changetwo ? 2 : 1)
+                .scaleEffect(changetwo ? 2.5 : 1)
                 .animation(.easeInOut)
             
             
