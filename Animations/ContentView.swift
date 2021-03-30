@@ -13,11 +13,15 @@ struct ContentView: View {
     @State private var changetwo = false
 
     var body: some View {
-
+        ZStack {
+            Color(.white)
+                .ignoresSafeArea()
+        
         VStack{
             Button("Twist The Avo") {
                 self.change.toggle()
             }.padding(.bottom, 200)
+            .accentColor(.pink)
            
             
              Image("Avo")
@@ -33,10 +37,12 @@ struct ContentView: View {
             Button("Grow The Avo") {
                 self.changetwo.toggle()
             }.padding(.top, 200)
-
+            .accentColor(.green)
+            
         }
        
     }
+}
 }
 
 struct ContentView_Previews: PreviewProvider {
